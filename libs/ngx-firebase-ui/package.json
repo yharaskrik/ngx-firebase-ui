@@ -1,14 +1,30 @@
 {
-  "name": "ngx-firebaseui",
-  "version": "0.0.1",
+  "name": "ngx-firebase-ui",
+  "version": "1.0.0",
   "peerDependencies": {
     "@angular/common": "^15.2.0",
     "@angular/core": "^15.2.0",
+    "@angular/fire": "^7.5",
     "firebase": "^9",
     "firebaseui": "^6"
   },
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "ng",
+    "firebase",
+    "authentication"
+  ],
+  "author": {
+    "email": "jay@trellis.org",
+    "name": "Jay Bell",
+    "url": "https://github.com/yharaskrik"
+  },
+  "repository": {
+    "url": "https://github.com/yharaskrik/ngx-firebase-ui"
+  }
 }
