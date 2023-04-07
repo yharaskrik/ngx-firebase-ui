@@ -16,7 +16,10 @@
         "polyfills": ["zone.js"],
         "tsConfig": "apps/demo/tsconfig.app.json",
         "assets": ["apps/demo/src/favicon.ico", "apps/demo/src/assets"],
-        "styles": ["apps/demo/src/styles.scss"],
+        "styles": [
+          "apps/demo/src/styles.scss",
+          "node_modules/firebaseui/dist/firebaseui.css"
+        ],
         "scripts": []
       },
       "configurations": {

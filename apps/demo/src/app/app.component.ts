@@ -1,14 +1,10 @@
-import { Component } from "@angular/core";
-import { RouterModule } from "@angular/router";
-import { NxWelcomeComponent } from "./nx-welcome.component";
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent, RouterModule],
-  selector: "ngx-firebaseui-root",
-  templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.scss"],
+  imports: [RouterOutlet],
+  selector: 'ngx-firebaseui-root',
+  template: ` <router-outlet></router-outlet> `,
 })
-export class AppComponent {
-  title = "demo";
-}
+export class AppComponent {}
