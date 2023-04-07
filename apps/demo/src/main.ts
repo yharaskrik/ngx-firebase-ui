@@ -45,6 +45,17 @@ const firebaseUiAuthConfig: auth.Config = {
   credentialHelper: auth.CredentialHelper.GOOGLE_YOLO,
 };
 
+const firebaseConfig = {
+  apiKey: '',
+  authDomain: '',
+  databaseURL: '',
+  projectId: '',
+  storageBucket: '',
+  messagingSenderId: '',
+  appId: '',
+  measurementId: '',
+};
+
 bootstrapApplication(AppComponent, {
   providers: [
     provideRouter(
@@ -63,18 +74,7 @@ bootstrapApplication(AppComponent, {
     provideFirebaseUi(firebaseUiAuthConfig),
 
     importProvidersFrom([
-      provideFirebaseApp(() =>
-        initializeApp({
-          apiKey: 'AIzaSyDIuel03xeL0Jf_rvBsySqYtRU_YsTqA9s',
-          authDomain: 'trellis-dev-1db6a.firebaseapp.com',
-          databaseURL: 'https://trellis-dev-1db6a.firebaseio.com',
-          projectId: 'trellis-dev-1db6a',
-          storageBucket: 'trellis-dev-1db6a.appspot.com',
-          messagingSenderId: '1044253807771',
-          appId: '1:1044253807771:web:556afb9f809418e678223e',
-          measurementId: 'G-ZCGYLLVD2P',
-        })
-      ),
+      provideFirebaseApp(() => initializeApp(firebaseConfig)),
       provideAuth(() => initializeAuth(getApp())),
     ]),
   ],
